@@ -33,13 +33,12 @@ export class AuthService {
       returnSecureToke: true
     };
 
+   
     return this.http.post(
-      `${this.url}signInWithPassword?key=${this.key}`,
-      authData
-    );
-
+      `${this.url}signInWithPassword?key=${this.key}`, 
+      authData);
+ 
   }
-  
   
   newUser(user:UserModel){
 

@@ -15,12 +15,12 @@
                 </div>
 
                 <span *ngIf="F.submitted && F.controls['pass'].errors" class="text-danger animated fadeIn">La contraseña debe de ser más de 6 letras</span>
-                <div class="wrap-input100 m-b-16" data-validate="Password is required">
-                    <input class="input100" type="password" [(ngModel)]="user.pass" name="pass" required minlength="6" placeholder="Password">
+                <div class="wrap-input100 m-b-16">
+                    <input class="input100" type="password" name="pass" required minlength="6" [(ngModel)]="user.pass" placeholder="Password">
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="flex-sb-m w-full p-t-3 p-b-24">
+                <div class="flex-sb-m w-full p-t-3 p-b-24" data-validate="Password is required">
                     <div class="contact100-form-checkbox">
                         <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
                         <label class="label-checkbox100" for="ckb1">
